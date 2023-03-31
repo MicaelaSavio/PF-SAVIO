@@ -11,17 +11,23 @@
 
 h1 {
    @include titles();
+   text-shadow: 2px 2px 2px #000000;
 }
 
-h2,
+h2 {
+   font-family: $font-family;
+   color: $color-fontprimary;
+}
 h3 {
-   font-family: $font-primary;
+   font-family: $font-family;
    color: $color-fontprimary;
 }
 
 p {
-   font-family: $font-primary;
+   font-family: $font-family;
    color: $color-fontprimary;
+   font-size: 1.3em;
+   
 }
 
 // FIN GLOBALES

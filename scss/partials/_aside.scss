@@ -11,6 +11,7 @@
 
     .p-aside {
         color: $color-fontsecundary;
+        text-shadow: 1px 1px 1px #000000;
     
     }
 
@@ -69,6 +70,7 @@
     .button-suscribirme {
         margin-top: 10px;
         @include buttom();
+        text-shadow: 1px 1px 1px #504f4f;
 
         &:hover {
             @include buttom();
