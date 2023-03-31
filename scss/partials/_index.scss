@@ -1,0 +1,149 @@
+// IMG DEL INDEX "%50 OFF EN PRODUCTOS SELECCIONADOS" + MEDIA QUERIES
+
+.container-img50porciento {
+    width: 300%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    .img-50porciento {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        opacity: 0.9;
+    }
+}
+
+/* MEDIA QUERIES - "img de %50off se ajusta a los valores de la pantalla"  */
+
+
+ @media (min-width: 768px) {
+     .container-img50porciento {
+       max-width: 100%;
+     }
+   }
+
+   @media (max-width: 768px) {
+        .container-img50porciento {
+            width: 100%;
+        }
+        .img-50porciento {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+// FIN IMG DEL INDEX "%50 OFF EN PRODUCTOS SELECCIONADOS" + MEDIA QUERIES
+
+
+// ESTILOS Y ANIMACION DEL TITULO DE NUEVOS INGRESOS 
+
+.titulo-index {
+    @include titles;
+}
+
+
+
+// CAROUSEL DEL INDEX
+
+
+.slider-frame {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    margin-top: -5px;
+    margin-bottom: -20px;
+
+
+    ul {
+        display: flex;
+        text-align: center;
+        padding: 0;
+        width: 500%;
+        animation: slide 8s infinite alternate ease-in-out;
+    }
+
+    li {
+        list-style: none;
+        width: 100%;
+
+        img {
+            width: 30%;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+              
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+// MEDIA QUERIES - Las imagenes del carousel se adaptan en resoluciones de MIN 768px
+
+@media (min-width: 768px) {
+
+    /* Establecemos ALTO y ANCHO del carrusel al 100% */
+    .slider-frame {
+        height: 100%;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+
+/* MEDIA QUERIES - Si la resolución es menor o igual a 768px */
+@media (max-width: 768px) {
+
+    /* Establecemos ALTO y ANCHO del carrusel al 100% */
+    .slider-frame {
+        height: 100%;
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    /* MEDIA QUERIES - Ajustamos el tamaño de las imágenes al 100% de la pantalla */
+    .slider-frame ul li img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+

@@ -1,0 +1,163 @@
+/* FOOTER - Logos de Redes sociales */
+
+
+#footer {
+    padding: 5px 0;
+    background-color: $color-fontsecundary;
+
+
+    .redes-container {
+        margin-top: 2px;
+        display: flex;
+        height: 20vh;
+        align-items: center;
+        justify-content: center;
+
+
+
+        ul {
+
+            li {
+
+                display: inline-block;
+                color: $color-fontsecundary;
+                margin: 5px 30px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: $bg-color;
+                opacity: 0.3;
+                font-size: 2em;
+                border-radius: 30px;
+
+                &:hover {
+
+                    transform: translateY(-3px) scale(1.3);
+                    width: 50px;
+                    height: 50px;
+                    opacity: 0.9;
+                }
+
+                .fa-facebook-f {
+                    &:hover {
+
+                        background: $facebook;
+                        @include redes();
+                    }
+
+                }
+
+                .fa-instagram {
+                    &:hover {
+
+                        background: $instagram;
+                        @include redes();
+
+                    }
+                }
+
+                .fa-twitter {
+                    &:hover {
+
+                        background: $twitter;
+                        @include redes();
+
+                    }
+                }
+
+                .fa-telegram {
+                    &:hover {
+
+                        background: $telegram;
+                        @include redes();
+
+                    }
+
+                }
+
+                .fa-envelope {
+                    &:hover {
+
+                        background: $mail;
+                        @include redes();
+
+                    }
+
+                }
+
+                .fa-linkedin-in {
+                    &:hover {
+
+                        background: $linkedin;
+                        @include redes();
+
+                    }
+
+                }
+
+                i {
+                    color: $color-fontsecundary;
+                }
+
+            }
+
+        }
+
+        @media only screen and (max-width: 768px) {
+            .redes-container ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .redes-container li {
+                width: 33.33%;
+                margin-bottom: 0.5px;
+                text-align: center;
+                height: 50px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    .list-footer {
+        @include reset-pm;
+        margin-bottom: 0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: center;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 25px;
+
+            &:hover {
+               opacity: .5;
+
+            }
+        }
+
+
+
+    }
+
+    .copyright {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 13px;
+        opacity: .5;
+    }
+
+
+
+}
+
+/* FIN LOGOS FOOTER*/

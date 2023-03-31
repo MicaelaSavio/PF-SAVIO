@@ -1,0 +1,145 @@
+
+// ENCABEZADO
+
+.encabezado-texto {
+    background-color: $bg-color;
+    color: $color-fontsecundary;
+    text-align: center;
+    font-family: $font-secundary;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0px;
+
+}
+
+// FIN ENCABEZADO
+
+// BOTON "BUSCAR" DEL HEADER
+
+.button-buscar {
+    @include buttom();
+
+    &:hover {
+        @include buttom();
+        background-color: $font-secundary;
+        color: $bg-color;
+        box-shadow: $box-shadow;
+    }
+}
+
+// FIN BOTON "BUSCAR" DEL HEADER
+
+// MEDIA QUERIES BOTON DE MENU - El boton de menu desaparecera cuando la pantalla llegue a 768px o menos 
+
+@media screen and (max-width: 768px) {
+    .nav-itemdropdown {
+        display: none;
+    }
+
+}
+
+// FIN MEDIA QUERIES BOTON DE MENU
+
+// IMG BANNER "Calzados Natitax By Mica"
+
+.img-container-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vh;
+    margin: 0 auto;
+   
+
+    img {
+        @include w-h();
+
+        &.img-banner-index {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+// MEDIA QUERIES - La img del banner se adapta en dispositivos mobile y desktop
+
+@media (max-width: 768px) {
+    .img-container-banner {
+     width: 40vh;
+    
+     
+    }
+  }
+
+  @media (min-width: 768px) {
+    .img-container-banner {
+        display: none;
+    }
+}
+
+// FIN IMG BANNER "Calzados Natitax By Mica"
+
+// CARRITO DE COMPRAS Y WHATSAPP + MEDIA QUERIES
+
+.container-carrito-whatsapp {
+
+    .soy-carrito {
+
+        &:hover {
+            opacity: 0.5;
+
+        }
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 15vh;
+        text-align: center;
+        z-index: 1000;
+
+    }
+
+    .soy-whatsapp {
+
+        &:hover {
+            opacity: 0.5;
+
+        }
+
+
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 5vh;
+        text-align: center;
+        z-index: 1000;
+
+
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .soy-whatsapp, .soy-carrito{
+           
+            width: 6vh;
+            height: 6vh;
+            
+        }  
+     
+    }
+
+    @media screen and (max-width: 768px) {
+        .soy-whatsapp {
+            right: 1vh;
+        }
+        .soy-carrito {
+            right: 8vh;
+        }
+    }
+
+}
+
+// FIN CARRITO DE COMPRAS Y WHATSAPP + MEDIA QUERIES

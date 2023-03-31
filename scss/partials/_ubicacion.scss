@@ -1,0 +1,33 @@
+
+
+// PAGINA DE UBICACION "DONDE ESTAMOS" - MAPA PUESTO DE MANERA RESPONSIVE
+
+.titulo-ubicacion {
+    @include titles;
+}
+
+
+.contenedor-responsivo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; 
+    max-width: 50%; 
+    margin: 0 auto; 
+  }
+  
+  @media (max-width: 767px) {
+    .contenedor-responsivo {
+      max-width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+  }
+   
+  .iframe-responsivo {
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+// FIN PAGINA DE UBICACION "DONDE ESTAMOS" - MAPA PUESTO DE MANERA RESPONSIVE
