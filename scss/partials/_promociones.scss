@@ -3,6 +3,7 @@
 .titulo-promociones {
 
    @include titles;
+   
 
     .subtitle-promociones {
         @include reset-pm;
