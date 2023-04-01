@@ -1,5 +1,5 @@
-Tienda de calzado en línea
-Este proyecto es una tienda en línea de calzado que permite a los usuarios buscar y comprar diferentes tipos de zapatos.
+Tienda de calzado online 
+Este proyecto fue preparado y entregado para Coderhouse en la entrega del proyecto final de diseño web. Es una tienda ecommerce online de calzado que permite a los usuarios buscar y comprar diferentes tipos de zapatos y accesorios de manera online.
 
 Cómo empezar
 Para utilizar este proyecto, siga los siguientes pasos:
